@@ -1,0 +1,138 @@
+/* ROOT */
+:root {
+  --gelap: #1b2326;
+  --abu: #3a4f52;
+  --hijau: #0ff5cb;
+  --putih: #f5fefd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  width: 100wh;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: var(--putih);
+  max-width: 100wh;
+}
+
+::selection {
+  background-color: var(--putih);
+  color: var(--gelap);
+}
+
+/*css3 design scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--putih);
+}
+
+/* sectio-one */
+.navbar .navbar-brand {
+  font-family: "Unica One", cursive;
+}
+
+.navbar .navbar-nav .nav-item a {
+  padding: 1rem 3rem;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .nav-item a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.section-one {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-one .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-one .textgede {
+  font-size: 10rem;
+  font-family: "Unica One", cursive;
+}
+
+.section-one .textkecil {
+  letter-spacing: 1rem;
+}
+
+.section-one .container .paragraf {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.section-one .cta a {
+  padding: 1rem 3rem;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+.section-one a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* sectio-two */
+.section-two {
+  min-height: 100vh;
+}
+
+/* MQ */
+/* lektop */
+
+/* teblet */
+
+/* hape */
+@media (max-width: 480px) {
+  .section-one .textgede {
+    font-size: 5rem;
+  }
+  .navbar-collapse {
+    margin-top: 20px;
+  }
+}
